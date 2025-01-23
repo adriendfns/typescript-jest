@@ -21,7 +21,7 @@ type Annotations = {
     end_line: number;
     start_column?: number;
     end_column?: number;
-    annotation_level: string;
+    annotation_level: "failure" | "notice" | "warning";
     message: string;
 };
 type PullRequestFiles = {
