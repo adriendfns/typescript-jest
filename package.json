@@ -52,16 +52,19 @@
     },
     "coverageReporters": [
       "text",
-      "html"
+      "html",
+      "lcov"
     ],
     "collectCoverageFrom": [
       "**/src/**/**/*.{ts,tsx,js,jsx}",
       "!app.ts",
       "!index.ts",
-      "!dist/**"     
+      "!dist/**"
     ],
     "coverageDirectory": "<rootDir>/test/.coverage",
     "testEnvironment": "node",
-    "setupFiles": ["<rootDir>/test/setup.ts"]
+    "setupFiles": [
+      "<rootDir>/test/setup.ts"
+    ]
   }
 }
