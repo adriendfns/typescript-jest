@@ -30,7 +30,7 @@ jobs:
     - run: npm run build --if-present
     - run: npm run test:cov
     - name: Code Coverage Annotation
-      uses: adriendfns/typescript-jest@v1.4
+      uses: adriendfns/typescript-jest@v1.5
       with:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         COVERAGE_FILE_PATH: "./test/.coverage/lcov.info"
